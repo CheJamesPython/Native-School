@@ -1,0 +1,22 @@
+<svg width="26" height="26" xmlns="http://www.w3.org/2000/svg" fill="none">
+ <defs>
+  <linearGradient y2="0" x2="1" y1="0" x1="0" id="svg_6">
+   <stop offset="0.00781" stop-opacity="0.99219" stop-color="#96bdff"/>
+   <stop offset="1" stop-opacity="0.99219" stop-color="#3259ff"/>
+  </linearGradient>
+  <linearGradient y2="0" x2="1" y1="0" x1="0" id="svg_7">
+   <stop offset="0" stop-opacity="0.99609" stop-color="#96bdff"/>
+   <stop offset="1" stop-opacity="0.99609" stop-color="#3259ff"/>
+  </linearGradient>
+  <linearGradient y2="0" x2="1" y1="0" x1="0" id="svg_8">
+   <stop offset="0.00781" stop-opacity="0.99219" stop-color="#96bdff"/>
+   <stop offset="1" stop-opacity="0.99609" stop-color="#3259ff"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <path fill="none" id="svg_1" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="url(#svg_6)" d="m9.74996,23.8334l6.50004,0c5.4166,0 7.5833,-2.1667 7.5833,-7.5834l0,-6.49998c0,-5.41667 -2.1667,-7.58333 -7.5833,-7.58333l-6.50004,0c-5.41667,0 -7.58333,2.16666 -7.58333,7.58333l0,6.49998c0,5.4167 2.16666,7.5834 7.58333,7.5834z"/>
+  <path id="svg_2" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="url(#svg_8)" d="m16.7917,20.0416c1.1916,0 2.1666,-0.975 2.1666,-2.1666l0,-9.75002c0,-1.19167 -0.975,-2.16667 -2.1666,-2.16667c-1.1917,0 -2.1667,0.975 -2.1667,2.16667l0,9.75002c0,1.1916 0.9642,2.1666 2.1667,2.1666z"/>
+  <path id="svg_3" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="url(#svg_7)" d="m9.20829,20.0417c1.19171,0 2.16671,-0.975 2.16671,-2.1667l0,-3.7916c0,-1.1917 -0.975,-2.1667 -2.16671,-2.1667c-1.19166,0 -2.16666,0.975 -2.16666,2.1667l0,3.7916c0,1.1917 0.96416,2.1667 2.16666,2.1667z"/>
+ </g>
+</svg>

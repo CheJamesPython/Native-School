@@ -1,0 +1,18 @@
+<svg width="26" height="26" xmlns="http://www.w3.org/2000/svg" fill="none">
+ <defs>
+  <linearGradient y2="0" x2="1" y1="0" x1="0" id="svg_4">
+   <stop offset="0" stop-opacity="0.99609" stop-color="#96bdff"/>
+   <stop offset="1" stop-opacity="0.99609" stop-color="#3259ff"/>
+  </linearGradient>
+  <linearGradient y2="0" x2="1" y1="0" x1="0" id="svg_5">
+   <stop offset="0" stop-opacity="0.99609" stop-color="#96bdff"/>
+   <stop offset="1" stop-opacity="0.99609" stop-color="#3952ff"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_1" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="url(#svg_4)" d="m14.0941,3.16331l6.3917,2.83833c1.8416,0.8125 1.8416,2.15583 0,2.96833l-6.3917,2.83833c-0.7258,0.325 -1.9175,0.325 -2.6433,0l-6.39169,-2.83833c-1.84167,-0.8125 -1.84167,-2.15583 0,-2.96833l6.39169,-2.83833c0.7258,-0.325 1.9175,-0.325 2.6433,0z"/>
+  <path id="svg_2" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="url(#svg_5)" d="m3.25,11.9167c0,0.91 0.6825,1.9608 1.51667,2.3292l7.35583,3.2716c0.5633,0.2492 1.2025,0.2492 1.755,0l7.3558,-3.2716c0.8342,-0.3684 1.5167,-1.4192 1.5167,-2.3292"/>
+  <path id="svg_3" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="url(#svg_4)" d="m3.25,17.3333c0,1.0075 0.59583,1.9175 1.51667,2.3292l7.35583,3.2716c0.5633,0.2492 1.2025,0.2492 1.755,0l7.3558,-3.2716c0.9209,-0.4117 1.5167,-1.3217 1.5167,-2.3292"/>
+ </g>
+</svg>

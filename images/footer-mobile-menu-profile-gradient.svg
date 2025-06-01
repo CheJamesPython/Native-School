@@ -1,0 +1,14 @@
+<svg width="26" height="26" xmlns="http://www.w3.org/2000/svg" fill="none">
+ <defs>
+  <linearGradient y2="0" x2="1" y1="0" x1="0" id="svg_5">
+   <stop offset="0" stop-opacity="0.99609" stop-color="#96bdff"/>
+   <stop offset="1" stop-opacity="0.99609" stop-color="#3259ff"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_1" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="url(#svg_5)" d="m13.13,13.845c-0.0758,-0.0109 -0.1733,-0.0109 -0.26,0c-1.9067,-0.065 -3.42334,-1.625 -3.42334,-3.5425c0,-1.96085 1.58164,-3.55335 3.55334,-3.55335c1.9608,0 3.5533,1.5925 3.5533,3.55335c-0.0108,1.9175 -1.5166,3.4775 -3.4233,3.5425z"/>
+  <path id="svg_2" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="url(#svg_5)" d="m20.3017,20.995c-1.9283,1.7658 -4.485,2.8383 -7.3017,2.8383c-2.8166,0 -5.3733,-1.0725 -7.30164,-2.8383c0.10834,-1.0183 0.75834,-2.015 1.9175,-2.795c2.96834,-1.9717 7.82164,-1.9717 10.76834,0c1.1592,0.78 1.8092,1.7767 1.9175,2.795z"/>
+  <path fill-opacity="0" fill="#ffffff" id="svg_3" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="url(#gradbox_stroke)" d="m12.99996,23.83336c5.9831,0 10.8334,-4.8503 10.8334,-10.8334c0,-5.98306 -4.8503,-10.83331 -10.8334,-10.83331c-5.98306,0 -10.83331,4.85025 -10.83331,10.83331c0,5.9831 4.85025,10.8334 10.83331,10.8334z"/>
+ </g>
+</svg>
