@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Fazus-IT" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./assets/reset.css" />
     <link rel="stylesheet" href="./assets/style.css" />
+    <base href="/">
     <script src="script.js" type="text/javascript" defer></script>
     <title>Родная Школа</title>
   </head>
@@ -56,7 +57,7 @@
               <div class="describe">Будущее в истоках</div>
             </div>
             <div class="media-search-area">
-              <div class="search-area">
+              <div class="search-area-header">
                 <a href="#" class="search-area__choice-city-button"> Казань </a>
                 <div class="search-area__search-field">
                   <search class="search-area__search search-field">
@@ -99,7 +100,7 @@
           </div>
           <div class="search-area-wrapper">
             <div class="search-area">
-              <a href="#" class="search-area__choice-city-button"> Казань </a>
+              <a href="#" class="media-search-area__choice-city-button search-area__choice-city-button"> Казань </a>
               <div class="media-nav">
                 <nav class="media-nav__nav nav">
                   <a href="#">Школы</a>
@@ -109,7 +110,7 @@
                   <a href="#">Помощь</a>
                 </nav>
               </div>
-              <div class="search-area__search-field">
+              <div class="media-search-area__search-field search-area__search-field">
                 <search class="search-area__search search-field">
                   <input
                     class="search-field__input"
@@ -144,8 +145,8 @@
 
     <div class="media-main-mobile-cards-container">
       <div class="media-main-mobile-cards-wrapper">
-        <div class="media-main-mobail-cards-items main__cards-items items">
-          <div class="items__one one">
+        <div class="media-main-mobail-cards-items main__cards-items items ">
+          <div class="items__item item">
             <div class="one__header-info">
               <div class="one__addition-text addition-text-2">
                 Казань, ул. Тулпар, дом 2
@@ -213,7 +214,7 @@
               </div>
             </div>
           </div>
-          <div class="items__one one">
+          <div class="items__item item">
             <div class="one__header-info">
               <div class="one__addition-text addition-text-2">
                 Казань, ул. Каюма Насыри, 17
@@ -281,7 +282,7 @@
               </div>
             </div>
           </div>
-          <div class="items__one one">
+          <div class="items__item item">
             <div class="one__header-info">
               <div class="one__addition-text addition-text-2">
                 Казань, ул. Серова, 4А
@@ -462,6 +463,10 @@
       </div>
     </div>
 
+    <div class="mobile-media-main-section-not-implemented --disable">
+      <h2>В Разработке... &#x1F477;</h2> 
+    </div>
+
     <main>
       <section>
         <div class="main__maintain-statistic">
@@ -499,576 +504,628 @@
             </div>
           </div>
       </section>
-      <div class="main__container">
-        <div class="section-container">
-          <section class="main-section-cards">
+      <section class="main-section-cards">
+        <div class="main-section-cards__container">
+          <div class="main-section-cards__wrapper">
             <div class="main__cards">
               <div class="main__cards-caption">
                 <div class="caption__title title--big">Школы города</div>
-                <div class="caption__button button--glassy button">
+                <a href="#" class="caption__button button--glassy button">
                   Все школы
-                </div>
+                </a>
               </div>
-              <div class="main__cards-items items">
-                <div class="items__one one">
-                  <div class="one__header-info">
-                    <div class="one__addition-text addition-text-2">
-                      Казань, ул. Тулпар, дом 2
-                    </div>
-                    <div class="one__middle-heading">Школа № 181</div>
-                  </div>
-                  <div class="one__card card--first">
-                    <div class="card__progress-bar progress-bar">
-                      <div class="card__description-text">
-                        <span>Нужды школы</span> <span>Собрали</span>
+              <div class="main__cards-items__container">
+                <div class="main__cards-items cards-items">
+                  <div class="main__cards-items__item__first items__item item main__cards-items__item--active">
+                    <div class="one__header-info">
+                      <div class="one__addition-text addition-text-2">
+                        Казань, ул. Тулпар, дом 2
                       </div>
-                      <progress
-                        class="progress-bar__progress"
-                        value="0.5"
-                      ></progress>
-                      <div class="one__money">
-                        <span
-                          class="one__middle-heading--white one__middle-heading"
-                          >500 000 ₽</span
+                      <div class="one__middle-heading">Школа № 181</div>
+                    </div>
+                    <div class="one__card card--first">
+                      <div class="card__progress-bar progress-bar">
+                        <div class="card__description-text">
+                          <span>Нужды школы</span> <span>Собрали</span>
+                        </div>
+                        <progress
+                          class="progress-bar__progress"
+                          value="0.5"
+                        ></progress>
+                        <div class="one__money">
+                          <span
+                            class="one__middle-heading--white one__middle-heading"
+                            >500 000 ₽</span
+                          >
+                          <span
+                            class="one__middle-heading--gradient one__middle-heading"
+                          >
+                            274 300 ₽
+                          </span>
+                        </div>
+                      </div>
+                      <a href="#" class="card__button button--fill button"
+                        >Помочь
+                      </a>
+                    </div>
+                    <div class="one__info info">
+                      <div class="info__alumnus info__frame">
+                        <div
+                          class="info__addition-text one__addition-text addition-text-2"
                         >
-                        <span
-                          class="one__middle-heading--gradient one__middle-heading"
+                          Выпускники
+                        </div>
+                        <div class="info__middle-heading one__middle-heading">
+                          8 923
+                        </div>
+                      </div>
+                      <div class="info__sponsor info__frame">
+                        <div
+                          class="info__addition-text one__addition-text addition-text-2"
                         >
-                          274 300 ₽
-                        </span>
+                          Спонсоры
+                        </div>
+                        <div class="info__middle-heading one__middle-heading">
+                          105
+                        </div>
+                      </div>
+                      <div class="info__projects info__frame">
+                        <div
+                          class="info__addition-text one__addition-text addition-text-2"
+                        >
+                          Проекты
+                        </div>
+                        <div class="info__middle-heading one__middle-heading">
+                          9
+                        </div>
                       </div>
                     </div>
-                    <a href="#" class="card__button button--fill button"
-                      >Помочь
-                    </a>
-                  </div>
-                  <div class="one__info info">
-                    <div class="info__alumnus info__frame">
-                      <div
-                        class="info__addition-text one__addition-text addition-text-2"
-                      >
-                        Выпускники
-                      </div>
-                      <div class="info__middle-heading one__middle-heading">
-                        8 923
-                      </div>
-                    </div>
-                    <div class="info__sponsor info__frame">
-                      <div
-                        class="info__addition-text one__addition-text addition-text-2"
-                      >
-                        Спонсоры
-                      </div>
-                      <div class="info__middle-heading one__middle-heading">
-                        105
-                      </div>
-                    </div>
-                    <div class="info__projects info__frame">
-                      <div
-                        class="info__addition-text one__addition-text addition-text-2"
-                      >
-                        Проекты
-                      </div>
-                      <div class="info__middle-heading one__middle-heading">
-                        9
+                    <div class="one__director director">
+                      <div class="director__icon director__icon--first"></div>
+                      <div class="director__info">
+                        <div
+                          class="director__addition-text one__addition-text addition-text-2"
+                        >
+                          Директор школы
+                        </div>
+                        <div class="director__addition-text addition-text-1">
+                          Абдуллина Дина Альбертовна
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="one__director director">
-                    <div class="director__icon director__icon--first"></div>
-                    <div class="director__info">
-                      <div
-                        class="director__addition-text one__addition-text addition-text-2"
-                      >
-                        Директор школы
+                  <div class="main__cards-items__item__second items__item item">
+                    <div class="one__header-info">
+                      <div class="one__addition-text addition-text-2">
+                        Казань, ул. Каюма Насыри, 17
                       </div>
-                      <div class="director__addition-text addition-text-1">
-                        Абдуллина Дина Альбертовна
+                      <div class="one__middle-heading">Гимназия №107</div>
+                    </div>
+                    <div class="one__card card--second">
+                      <div class="card__progress-bar progress-bar">
+                        <div class="card__description-text">
+                          <span>Нужды школы</span> <span>Собрали</span>
+                        </div>
+                        <progress
+                          class="progress-bar__progress"
+                          value="0.5"
+                        ></progress>
+                        <div class="one__money">
+                          <span
+                            class="one__middle-heading--white one__middle-heading"
+                            >670 000 ₽</span
+                          >
+                          <span
+                            class="one__middle-heading--gradient one__middle-heading"
+                          >
+                            310 800 ₽
+                          </span>
+                        </div>
+                      </div>
+                      <a href="#" class="card__button button--fill button"
+                        >Помочь
+                      </a>
+                    </div>
+                    <div class="one__info info">
+                      <div class="info__alumnus info__frame">
+                        <div
+                          class="info__addition-text one__addition-text addition-text-2"
+                        >
+                          Выпускники
+                        </div>
+                        <div class="info__middle-heading one__middle-heading">
+                          13 704
+                        </div>
+                      </div>
+                      <div class="info__sponsor info__frame">
+                        <div
+                          class="info__addition-text one__addition-text addition-text-2"
+                        >
+                          Спонсоры
+                        </div>
+                        <div class="info__middle-heading one__middle-heading">
+                          209
+                        </div>
+                      </div>
+                      <div class="info__projects info__frame">
+                        <div
+                          class="info__addition-text one__addition-text addition-text-2"
+                        >
+                          Проекты
+                        </div>
+                        <div class="info__middle-heading one__middle-heading">
+                          3
+                        </div>
+                      </div>
+                    </div>
+                    <div class="one__director director">
+                      <div class="director__icon director__icon--second"></div>
+                      <div class="director__info">
+                        <div
+                          class="director__addition-text one__addition-text addition-text-2"
+                        >
+                          Директор школы
+                        </div>
+                        <div class="director__addition-text addition-text-1">
+                          Акмаева Анастасия Сергеевна
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main__cards-items__item__third items__item__third item">
+                    <div class="one__header-info">
+                      <div class="one__addition-text addition-text-2">
+                        Казань, ул. Серова, 4А
+                      </div>
+                      <div class="one__middle-heading">Гимназия № 175</div>
+                    </div>
+                    <div class="one__card card--third">
+                      <div class="card__progress-bar progress-bar">
+                        <!-- Здесь нужно проверить работу text-align: justify; -->
+                        <div class="card__description-text">
+                          <span>Нужды школы</span> <span>Собрали</span>
+                        </div>
+                        <progress
+                          class="progress-bar__progress"
+                          value="0.5"
+                        ></progress>
+                        <div class="one__money">
+                          <span
+                            class="one__middle-heading--white one__middle-heading"
+                            >500 000 ₽</span
+                          >
+                          <span
+                            class="one__middle-heading--gradient one__middle-heading"
+                          >
+                            274 300 ₽
+                          </span>
+                        </div>
+                      </div>
+                      <a href="#" class="card__button button--fill button"
+                        >Помочь
+                      </a>
+                    </div>
+                    <div class="one__info info">
+                      <div class="info__alumnus info__frame">
+                        <div
+                          class="info__addition-text one__addition-text addition-text-2"
+                        >
+                          Выпускники
+                        </div>
+                        <div class="info__middle-heading one__middle-heading">
+                          4 105
+                        </div>
+                      </div>
+                      <div class="info__sponsor info__frame">
+                        <div
+                          class="info__addition-text one__addition-text addition-text-2"
+                        >
+                          Спонсоры
+                        </div>
+                        <div class="info__middle-heading one__middle-heading">
+                          105
+                        </div>
+                      </div>
+                      <div class="info__projects info__frame">
+                        <div
+                          class="info__addition-text one__addition-text addition-text-2"
+                        >
+                          Проекты
+                        </div>
+                        <div class="info__middle-heading one__middle-heading">
+                          9
+                        </div>
+                      </div>
+                    </div>
+                    <div class="one__director director">
+                      <div class="director__icon director__icon--third"></div>
+                      <div class="director__info">
+                        <div
+                          class="director__addition-text one__addition-text addition-text-2"
+                        >
+                          Директор школы
+                        </div>
+                        <div class="director__addition-text addition-text-1">
+                          Валеева Амина Салимгараевна
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="items__one one">
-                  <div class="one__header-info">
+
+                <div class="main__cards-items__list cards-items-list">
+
+                  <button data-card="main__cards-items__item__first" class="cards-items-list__button one__header-info one__header-info--active">
+                      <div class="one__addition-text addition-text-2">
+                        Казань, ул. Тулпар, дом 2
+                      </div>
+                      <div class="one__middle-heading">Школа № 181</div>
+                  </button>
+
+                  <button data-card="main__cards-items__item__second" class="cards-items-list__button one__header-info">
                     <div class="one__addition-text addition-text-2">
                       Казань, ул. Каюма Насыри, 17
                     </div>
                     <div class="one__middle-heading">Гимназия №107</div>
-                  </div>
-                  <div class="one__card card--second">
-                    <div class="card__progress-bar progress-bar">
-                      <div class="card__description-text">
-                        <span>Нужды школы</span> <span>Собрали</span>
-                      </div>
-                      <progress
-                        class="progress-bar__progress"
-                        value="0.5"
-                      ></progress>
-                      <div class="one__money">
-                        <span
-                          class="one__middle-heading--white one__middle-heading"
-                          >670 000 ₽</span
-                        >
-                        <span
-                          class="one__middle-heading--gradient one__middle-heading"
-                        >
-                          310 800 ₽
-                        </span>
-                      </div>
-                    </div>
-                    <a href="#" class="card__button button--fill button"
-                      >Помочь
-                    </a>
-                  </div>
-                  <div class="one__info info">
-                    <div class="info__alumnus info__frame">
-                      <div
-                        class="info__addition-text one__addition-text addition-text-2"
-                      >
-                        Выпускники
-                      </div>
-                      <div class="info__middle-heading one__middle-heading">
-                        13 704
-                      </div>
-                    </div>
-                    <div class="info__sponsor info__frame">
-                      <div
-                        class="info__addition-text one__addition-text addition-text-2"
-                      >
-                        Спонсоры
-                      </div>
-                      <div class="info__middle-heading one__middle-heading">
-                        209
-                      </div>
-                    </div>
-                    <div class="info__projects info__frame">
-                      <div
-                        class="info__addition-text one__addition-text addition-text-2"
-                      >
-                        Проекты
-                      </div>
-                      <div class="info__middle-heading one__middle-heading">
-                        3
-                      </div>
-                    </div>
-                  </div>
-                  <div class="one__director director">
-                    <div class="director__icon director__icon--second"></div>
-                    <div class="director__info">
-                      <div
-                        class="director__addition-text one__addition-text addition-text-2"
-                      >
-                        Директор школы
-                      </div>
-                      <div class="director__addition-text addition-text-1">
-                        Акмаева Анастасия Сергеевна
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="items__one one">
-                  <div class="one__header-info">
+                  </button>
+
+                
+                  <button data-card="main__cards-items__item__third" class="cards-items-list__button one__header-info">
                     <div class="one__addition-text addition-text-2">
                       Казань, ул. Серова, 4А
                     </div>
                     <div class="one__middle-heading">Гимназия № 175</div>
-                  </div>
-                  <div class="one__card card--third">
-                    <div class="card__progress-bar progress-bar">
-                      <!-- Здесь нужно проверить работу text-align: justify; -->
-                      <div class="card__description-text">
-                        <span>Нужды школы</span> <span>Собрали</span>
-                      </div>
-                      <progress
-                        class="progress-bar__progress"
-                        value="0.5"
-                      ></progress>
-                      <div class="one__money">
-                        <span
-                          class="one__middle-heading--white one__middle-heading"
-                          >500 000 ₽</span
-                        >
-                        <span
-                          class="one__middle-heading--gradient one__middle-heading"
-                        >
-                          274 300 ₽
-                        </span>
-                      </div>
-                    </div>
-                    <a href="#" class="card__button button--fill button"
-                      >Помочь
-                    </a>
-                  </div>
-                  <div class="one__info info">
-                    <div class="info__alumnus info__frame">
-                      <div
-                        class="info__addition-text one__addition-text addition-text-2"
-                      >
-                        Выпускники
-                      </div>
-                      <div class="info__middle-heading one__middle-heading">
-                        4 105
-                      </div>
-                    </div>
-                    <div class="info__sponsor info__frame">
-                      <div
-                        class="info__addition-text one__addition-text addition-text-2"
-                      >
-                        Спонсоры
-                      </div>
-                      <div class="info__middle-heading one__middle-heading">
-                        105
-                      </div>
-                    </div>
-                    <div class="info__projects info__frame">
-                      <div
-                        class="info__addition-text one__addition-text addition-text-2"
-                      >
-                        Проекты
-                      </div>
-                      <div class="info__middle-heading one__middle-heading">
-                        9
-                      </div>
-                    </div>
-                  </div>
-                  <div class="one__director director">
-                    <div class="director__icon director__icon--third"></div>
-                    <div class="director__info">
-                      <div
-                        class="director__addition-text one__addition-text addition-text-2"
-                      >
-                        Директор школы
-                      </div>
-                      <div class="director__addition-text addition-text-1">
-                        Валеева Амина Салимгараевна
-                      </div>
-                    </div>
-                  </div>
+                  </button>
+
                 </div>
               </div>
             </div>
-          </section>
-          <section>
-            <div class="main__support-cities top-cities">
-              <table class="table">
-                <caption class="table__caption big-heading">
-                  Топ поддерживающих городов
-                </caption>
-                <tr class="table__row">
-                  <td>
-                    <div class="table__col--first col">
-                      Москва и московская область
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--second col">
-                      <span>1 232</span>&nbsp;школ
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--third col">
-                      <span>390 452</span>&nbsp;выпускников
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--fourth col">
-                      <span>1039</span>&nbsp;подписок
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--fifth col">232 470 050 ₽</div>
-                  </td>
-                </tr>
-                <tr class="table__row">
-                  <td>
-                    <div class="table__col--first col--transparent">
-                      Город Казань
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--second col--transparent">
-                      <span>238</span>&nbsp;школ
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--third col--transparent">
-                      <span>120 748</span>&nbsp;выпускников
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--fourth col--transparent">
-                      <span>924</span>&nbsp;подписок
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--fifth col--transparent">
-                      117 507 250 ₽
-                    </div>
-                  </td>
-                </tr>
-                <tr class="table__row">
-                  <td>
-                    <div class="table__col--first col">
-                      Город Санкт-Петербург
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--second col">
-                      <span>732</span>&nbsp;школ
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--third col">
-                      <span>104 204</span>&nbsp;выпускников
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--fourth col">
-                      <span>512</span>&nbsp;подписок
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--fifth col">104 150 050 ₽</div>
-                  </td>
-                </tr>
-                <tr class="table__row">
-                  <td>
-                    <div class="table__col--first col--transparent">
-                      Калужская область
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--second col--transparent">
-                      <span>115</span>&nbsp;школ
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--third col--transparent">
-                      <span>91 015</span>&nbsp;выпускников
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--fourth col--transparent">
-                      <span>245</span>&nbsp;подписок
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--fifth col--transparent">
-                      87 940 000 ₽
-                    </div>
-                  </td>
-                </tr>
-                <tr class="table__row">
-                  <td>
-                    <div class="table__col--first col">Ульяновская область</div>
-                  </td>
-                  <td>
-                    <div class="table__col--second col">
-                      <span>29</span>&nbsp;школ
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--third col">
-                      <span>30 242</span>&nbsp;выпускников
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--fourth col">
-                      <span>117</span>&nbsp;подписок
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--fifth col">32 734 200 ₽</div>
-                  </td>
-                </tr>
-                <tr class="table__row">
-                  <td>
-                    <div class="table__col--first col--transparent">
-                      Республика Ингушетия
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--second col--transparent">
-                      <span>57</span>&nbsp;школ
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--third col--transparent">
-                      <span>14 018</span>&nbsp;выпускников
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--fourth col--transparent">
-                      <span>95</span>&nbsp;подписок
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--fifth col--transparent">
-                      12 405 100 ₽
-                    </div>
-                  </td>
-                </tr>
-                <tr class="table__row">
-                  <td>
-                    <div class="table__col--first col">Республика Карелия</div>
-                  </td>
-                  <td>
-                    <div class="table__col--second col">
-                      <span>15</span>&nbsp;школ
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--third col">
-                      <span>9 903</span>&nbsp;выпускников
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--fourth col">
-                      <span>67</span>&nbsp;подписок
-                    </div>
-                  </td>
-                  <td>
-                    <div class="table__col--fifth col">9 242 050 ₽</div>
-                  </td>
-                </tr>
-              </table>
-              <a href="#" class="top-cities__button button--glassy button"></a>
-            </div>
-          </section>
-          <section>
-            <div class="main__school-projects-wrapper">
-              <div class="main__cards-caption main__cards-caption_margined">
-                <div class="caption__title title--big">Проекты школ</div>
-                <a
-                  href="#"
-                  class="caption__button button--glassy button caption__button_sized"
-                >
-                  Все проекты
-                </a>
-              </div>
-              <div class="project-card-wrapper">
-                <div class="project-card">
-                  <div
-                    class="card-image"
-                    style="background-image: url('/images/main-school_1.png')"
-                  ></div>
-                  <div class="progress-bar">
-                    <div class="progress-bar__description-text">
-                      <span class="progress-bar__description-text--start">
-                        Необходимо
-                      </span>
-                      <span class="progress-bar__description-text--end">
-                        Собрали
-                      </span>
-                    </div>
-                    <progress class="progress-bar__bar" value="0.6"></progress>
-                    <div class="progress-bar__middle-heading">
-                      <span class="progress-bar__middle-heading--start">
-                        1 200 000 ₽
-                      </span>
-                      <span class="progress-bar__middle-heading--end">
-                        920 300 ₽</span
-                      >
-                    </div>
-                  </div>
-                  <div class="project-card-addition-text-2">
-                    Незрячие дети с малым остатком зрения
-                  </div>
-                  <div class="project-card-middle-heading one__middle-heading">
-                    Создание класса для незрячих
-                  </div>
-                  <div class="project-cards-buttons">
-                    <a href="#" class="project-cards-fill-button button--fill">
-                      Помочь
-                    </a>
-                    <a href="#" class="project-cards-school-button icon">
-                      Школа № 181
-                    </a>
-                  </div>
-                </div>
-                <div class="project-card">
-                  <div
-                    class="card-image"
-                    style="background-image: url('/images/main-school_2.png')"
-                  ></div>
-                  <div class="progress-bar">
-                    <div class="progress-bar__description-text">
-                      <span class="progress-bar__description-text--start">
-                        Необходимо
-                      </span>
-                      <span class="progress-bar__description-text--end">
-                        Собрали
-                      </span>
-                    </div>
-                    <progress class="progress-bar__bar" value="0.6"></progress>
-                    <div class="progress-bar__middle-heading">
-                      <span class="progress-bar__middle-heading--start">
-                        900 000 ₽
-                      </span>
-                      <span class="progress-bar__middle-heading--end">
-                        109 100 ₽</span
-                      >
-                    </div>
-                  </div>
-                  <div class="project-card-addition-text-2">
-                    Дизайн и внутренняя организация ремонт спортзала в школе
-                  </div>
-                  <div class="project-card-middle-heading one__middle-heading">
-                    Обновление спортивного зала
-                  </div>
-                  <div class="project-cards-buttons">
-                    <a href="#" class="project-cards-fill-button button--fill">
-                      Помочь
-                    </a>
-                    <a href="#" class="project-cards-school-button icon">
-                      Гимназия №107
-                    </a>
-                  </div>
-                </div>
-                <div class="project-card">
-                  <div
-                    class="card-image"
-                    style="background-image: url('/images/main-school_3.png')"
-                  ></div>
-                  <div class="progress-bar">
-                    <div class="progress-bar__description-text">
-                      <span class="progress-bar__description-text--start">
-                        Необходимо
-                      </span>
-                      <span class="progress-bar__description-text--end">
-                        Собрали
-                      </span>
-                    </div>
-                    <progress class="progress-bar__bar" value="0.6"></progress>
-                    <div class="progress-bar__middle-heading">
-                      <span class="progress-bar__middle-heading--start">
-                        5 200 000 ₽
-                      </span>
-                      <span class="progress-bar__middle-heading--end">
-                        920 300 ₽</span
-                      >
-                    </div>
-                  </div>
-                  <div class="project-card-addition-text-2">
-                    Поддерживает учащихся старших классов
-                  </div>
-                  <div class="project-card-middle-heading one__middle-heading">
-                    Гранты для старшекласников
-                  </div>
-                  <div class="project-cards-buttons">
-                    <a href="#" class="project-cards-fill-button button--fill">
-                      Помочь
-                    </a>
-                    <a href="#" class="project-cards-school-button icon">
-                      Гимназия № 175
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          </div>
         </div>
-      </div>
+      </section>
+      <section>
+        <div class="main__support-cities top-cities">
+          <div class="main__support-cities__wrapper">
+            <table class="table">
+              <caption class="table__caption big-heading">
+                Топ поддерживающих городов
+              </caption>
+              <tr class="table__row">
+                <td>
+                  <div class="table__col--first col">
+                    Москва и московская область
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--second col">
+                    <span>1 232</span>&nbsp;школ
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--third col">
+                    <span>390 452</span>выпускников
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--fourth col">
+                    <span>1039</span>&nbsp;подписок
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--fifth col">232 470 050 ₽</div>
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td>
+                  <div class="table__col--first col--transparent">
+                    Город Казань
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--second col--transparent">
+                    <span>238</span>&nbsp;школ
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--third col--transparent">
+                    <span>120 748</span>&nbsp;выпускников
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--fourth col--transparent">
+                    <span>924</span>&nbsp;подписок
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--fifth col--transparent">
+                    117 507 250 ₽
+                  </div>
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td>
+                  <div class="table__col--first col">
+                    Город Санкт-Петербург
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--second col">
+                    <span>732</span>&nbsp;школ
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--third col">
+                    <span>104 204</span>&nbsp;выпускников
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--fourth col">
+                    <span>512</span>&nbsp;подписок
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--fifth col">104 150 050 ₽</div>
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td>
+                  <div class="table__col--first col--transparent">
+                    Калужская область
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--second col--transparent">
+                    <span>115</span>&nbsp;школ
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--third col--transparent">
+                    <span>91 015</span>&nbsp;выпускников
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--fourth col--transparent">
+                    <span>245</span>&nbsp;подписок
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--fifth col--transparent">
+                    87 940 000 ₽
+                  </div>
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td>
+                  <div class="table__col--first col">Ульяновская область</div>
+                </td>
+                <td>
+                  <div class="table__col--second col">
+                    <span>29</span>&nbsp;школ
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--third col">
+                    <span>30 242</span>&nbsp;выпускников
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--fourth col">
+                    <span>117</span>&nbsp;подписок
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--fifth col">32 734 200 ₽</div>
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td>
+                  <div class="table__col--first col--transparent">
+                    Республика Ингушетия
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--second col--transparent">
+                    <span>57</span>&nbsp;школ
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--third col--transparent">
+                    <span>14 018</span>&nbsp;выпускников
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--fourth col--transparent">
+                    <span>95</span>&nbsp;подписок
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--fifth col--transparent">
+                    12 405 100 ₽
+                  </div>
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td>
+                  <div class="table__col--first col">Республика Карелия</div>
+                </td>
+                <td>
+                  <div class="table__col--second col">
+                    <span>15</span>&nbsp;школ
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--third col">
+                    <span>9 903</span>&nbsp;выпускников
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--fourth col">
+                    <span>67</span>&nbsp;подписок
+                  </div>
+                </td>
+                <td>
+                  <div class="table__col--fifth col">9 242 050 ₽</div>
+                </td>
+              </tr>
+            </table>
+            <a href="#" class="top-cities__button button--glassy button"></a>
+          </div>
+        </div>
+      </section>
+      <section class="main-section-school-projects">
+        <div class="main__school-projects-container">
+          <div class="main__school-projects-wrapper">
+            <div class="main__cards-caption">
+              <div class="caption__title title--big">Проекты школ</div>
+              <a
+                href="#"
+                class="caption__button button--glassy button caption__button_sized"
+              >
+                Все проекты
+              </a>
+            </div>
+            <div class="project-card-wrapper">
+              <div class="project-card__first project-card">
+                <div
+                  class="card-image"
+                  style="background-image: url('/images/main-school_1.png')"
+                ></div>
+                <div class="progress-bar">
+                  <div class="progress-bar__description-text">
+                    <span class="progress-bar__description-text--start">
+                      Необходимо
+                    </span>
+                    <span class="progress-bar__description-text--end">
+                      Собрали
+                    </span>
+                  </div>
+                  <progress class="progress-bar__bar" value="0.6"></progress>
+                  <div class="progress-bar__middle-heading">
+                    <span class="progress-bar__middle-heading--start">
+                      1 200 000 ₽
+                    </span>
+                    <span class="progress-bar__middle-heading--end">
+                      920 300 ₽</span
+                    >
+                  </div>
+                </div>
+                <div class="project-card-addition-text-2">
+                  Незрячие дети с малым остатком зрения
+                </div>
+                <div class="project-card-middle-heading one__middle-heading">
+                  Создание класса для незрячих
+                </div>
+                <div class="project-cards-buttons">
+                  <a href="#" class="project-cards-fill-button button--fill">
+                    Помочь
+                  </a>
+                  <a href="#" class="project-cards-school-button icon">
+                    Школа № 181
+                  </a>
+                </div>
+              </div>
+              <div class="project-card__second project-card">
+                <div
+                  class="card-image"
+                  style="background-image: url('/images/main-school_2.png')"
+                ></div>
+                <div class="progress-bar">
+                  <div class="progress-bar__description-text">
+                    <span class="progress-bar__description-text--start">
+                      Необходимо
+                    </span>
+                    <span class="progress-bar__description-text--end">
+                      Собрали
+                    </span>
+                  </div>
+                  <progress class="progress-bar__bar" value="0.6"></progress>
+                  <div class="progress-bar__middle-heading">
+                    <span class="progress-bar__middle-heading--start">
+                      900 000 ₽
+                    </span>
+                    <span class="progress-bar__middle-heading--end">
+                      109 100 ₽</span
+                    >
+                  </div>
+                </div>
+                <div class="project-card-addition-text-2">
+                  Дизайн и внутренняя организация ремонт спортзала в школе
+                </div>
+                <div class="project-card-middle-heading one__middle-heading">
+                  Обновление спортивного зала
+                </div>
+                <div class="project-cards-buttons">
+                  <a href="#" class="project-cards-fill-button button--fill">
+                    Помочь
+                  </a>
+                  <a href="#" class="project-cards-school-button icon">
+                    Гимназия №107
+                  </a>
+                </div>
+              </div>
+              <div class="project-card__third project-card">
+                <div
+                  class="card-image"
+                  style="background-image: url('/images/main-school_3.png')"
+                ></div>
+                <div class="progress-bar">
+                  <div class="progress-bar__description-text">
+                    <span class="progress-bar__description-text--start">
+                      Необходимо
+                    </span>
+                    <span class="progress-bar__description-text--end">
+                      Собрали
+                    </span>
+                  </div>
+                  <progress class="progress-bar__bar" value="0.6"></progress>
+                  <div class="progress-bar__middle-heading">
+                    <span class="progress-bar__middle-heading--start">
+                      5 200 000 ₽
+                    </span>
+                    <span class="progress-bar__middle-heading--end">
+                      920 300 ₽</span
+                    >
+                  </div>
+                </div>
+                <div class="project-card-addition-text-2">
+                  Поддерживает учащихся старших классов
+                </div>
+                <div class="project-card-middle-heading one__middle-heading">
+                  Гранты для старшекласников
+                </div>
+                <div class="project-cards-buttons">
+                  <a href="#" class="project-cards-fill-button button--fill">
+                    Помочь
+                  </a>
+                  <a href="#" class="project-cards-school-button icon">
+                    Гимназия № 175
+                  </a>
+                </div>
+              </div>
+
+              <div class="media-main-section-project-card-list">
+                <div class="media-main-section-project-card-list__container">
+                  <div class="media-main-section-project-card-list__wrapper">
+
+                    <button class="project-cards-school-button icon project-cards-school-button--active">
+                      Школа № 181
+                    </button>
+
+                    <button class="project-cards-school-button icon">
+                      Гимназия №107
+                    </button>
+
+                    <button class="project-cards-school-button icon">
+                      Гимназия № 175
+                    </button>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <aside>
@@ -1107,7 +1164,9 @@
                   </div>
                   <div class="school__name">Гимназия №107</div>
                 </div>
-                <div class="school-icon"></div>
+                <div class="school-icon">
+                  <img src="/images/aside-subscribe-schoole-icon.svg" alt="Добавить в избранное">
+                </div>
               </div>
               <div class="popular-schools__school school">
                 <div class="school__logo school__logo_second"></div>
@@ -1117,7 +1176,8 @@
                   </div>
                   <div class="school__name">Школа № 32</div>
                 </div>
-                <div class="school-icon"></div>
+                <div class="school-icon"><img src="/images/aside-subscribe-schoole-icon.svg" alt="Добавить в избранное">
+                </div>
               </div>
               <div class="popular-schools__school school">
                 <div class="school__logo school__logo_third"></div>
@@ -1127,7 +1187,7 @@
                   </div>
                   <div class="school__name">Школа № 181</div>
                 </div>
-                <div class="school-icon"></div>
+                <div class="school-icon"><img src="/images/aside-subscribe-schoole-icon.svg" alt="Добавить в избранное"></div>
               </div>
               <div class="popular-schools__school school">
                 <div class="school__logo school__logo_fourth"></div>
@@ -1137,7 +1197,7 @@
                   </div>
                   <div class="school__name">Школа № 14</div>
                 </div>
-                <div class="school-icon"></div>
+                <div class="school-icon"><img src="/images/aside-subscribe-schoole-icon.svg" alt="Добавить в избранное"></div>
               </div>
               <div class="popular-schools__school school">
                 <div class="school__logo school__logo_fifth"></div>
@@ -1147,7 +1207,7 @@
                   </div>
                   <div class="school__name">Гимназия № 175</div>
                 </div>
-                <div class="school-icon"></div>
+                <div class="school-icon"><img src="/images/aside-subscribe-schoole-icon.svg" alt="Добавить в избранное"></div>
               </div>
               <div class="popular-schools__school school">
                 <div class="school__logo school__logo_sixth"></div>
@@ -1157,7 +1217,7 @@
                   </div>
                   <div class="school__name">Школа № 102</div>
                 </div>
-                <div class="school-icon"></div>
+                <div class="school-icon"><img src="/images/aside-subscribe-schoole-icon.svg" alt="Добавить в избранное"></div>
               </div>
             </div>
           </div>
@@ -1245,7 +1305,7 @@
               </button>
             </li>
             <li>
-              <button class="menu-btn" href="#">
+              <button onclick="replaceMenu3()" class="menu-btn" href="#">
                 <img
                   data-init_path="/images/footer-mobile-menu-accountancy.svg"
                   data-gradient_path="/images/footer-mobile-menu-accountancy-gradient.svg"
@@ -1257,7 +1317,7 @@
               </button>
             </li>
             <li>
-              <button class="menu-btn" href="#">
+              <button onclick="replaceMenu3()" class="menu-btn" href="#">
                 <img
                   data-init_path="/images/footer-mobile-menu-events.svg"
                   data-gradient_path="/images/footer-mobile-menu-events-gradient.svg"
@@ -1269,7 +1329,7 @@
               </button>
             </li>
             <li>
-              <button class="menu-btn" href="#">
+              <button onclick="replaceMenu3()" class="menu-btn" href="#">
                 <img
                   data-init_path="/images/footer-mobile-menu-profile.svg"
                   data-gradient_path="/images/footer-mobile-menu-profile-gradient.svg"
@@ -1468,7 +1528,7 @@
               <ul>
                 <li class="privacy__text">© 2025, Проект «Родная Школа»</li>
                 <li class="privacy__text">Политика конфиденциальности</li>
-                <li class="privacy__text">Разработка и продвижение</li>
+                <li class="privacy__text">Разработка и продвижение <img src="/images/footer-DevMark.png"></li>
               </ul>
             </div>
           </div>

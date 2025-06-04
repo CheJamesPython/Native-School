@@ -64,9 +64,14 @@ function replaceMenu1(this__menu_btn) {
     ".mobile-media-main-section-project-card-container"
   );
 
+  let element3 = document.body.querySelector(
+    ".mobile-media-main-section-not-implemented"
+  );
+
   if (element1.classList.contains("--disable")) {
     element1.classList.toggle("--disable");
-    element2.classList.toggle("--disable");
+    element2.classList.add("--disable");
+    element3.classList.add("--disable");
   }
 }
 
@@ -79,8 +84,69 @@ function replaceMenu2(this__menu_btn) {
     ".mobile-media-main-section-project-card-container"
   );
 
+  let element3 = document.body.querySelector(
+    ".mobile-media-main-section-not-implemented"
+  );
+
   if (element2.classList.contains("--disable")) {
-    element1.classList.toggle("--disable");
+    element1.classList.add("--disable");
     element2.classList.toggle("--disable");
+    element3.classList.add("--disable");
   }
+}
+
+function replaceMenu3(this__menu_btn) {
+  let element1 = document.body.querySelector(
+    ".media-main-mobile-cards-container"
+  );
+
+  let element2 = document.body.querySelector(
+    ".mobile-media-main-section-project-card-container"
+  );
+  let element3 = document.body.querySelector(
+    ".mobile-media-main-section-not-implemented"
+  );
+
+  element1.classList.add("--disable");
+  element2.classList.add("--disable");
+  element3.classList.remove("--disable");
+
+  // if (!element1.classList.contains("--disable")) {
+  //   console.log(element1);
+  //   element1.classList.toggle("--disable");
+  // }
+  // if (!element2.classList.contains("--disable")) {
+  //   console.log(element2);
+  //   element2.classList.toggle("--disable");
+  // }
+}
+
+let header_info_buttons = document.body.querySelectorAll(
+  "button.cards-items-list__button"
+);
+
+header_info_buttons.forEach((btn, idx) => {
+  btn.addEventListener("click", card_select);
+});
+
+function card_select() {
+  let btn_parrent = document.body.querySelector(".main__cards");
+
+  header_info_buttons.forEach((btn) => {
+    btn.classList.remove("one__header-info--active");
+    if (
+      btn_parrent
+        .querySelector(`.${btn.dataset.card}`)
+        .classList.contains("main__cards-items__item--active")
+    ) {
+      btn_parrent
+        .querySelector(`.${btn.dataset.card}`)
+        .classList.remove("main__cards-items__item--active");
+    }
+  });
+
+  this.classList.add("one__header-info--active");
+  let card = btn_parrent.querySelector(`.${this.dataset.card}`);
+
+  card.classList.add("main__cards-items__item--active");
 }
